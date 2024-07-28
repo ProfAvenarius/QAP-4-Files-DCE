@@ -368,7 +368,7 @@ def Report():
 
          pay_type_dsp = ExpandPay(pay_type)
 
-         car_tot = BASIC_PREM + (num_car -1) * BASIC_PREM * DISC_ADD_CARS
+         car_tot = BASIC_PREM + (num_car -1) * BASIC_PREM * (1 - DISC_ADD_CARS)
 
          if xtr_cov == "Y":
             xtr_tot += (XTR_LIB_FEE*num_car)
